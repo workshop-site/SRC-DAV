@@ -39,6 +39,17 @@
     display: block; /* Évite les espaces indésirables sous l’image */
     margin: 10px auto; /* Centre l’image */
 }
+	    .image-container {
+    display: flex;
+    flex-direction: column; /* Affiche les images en colonne */
+    align-items: center; /* Centre les images horizontalement */
+    max-width: 100%; /* Empêche le débordement */
+}
+.image-container img {
+    width: 80%; /* Ajustez cette valeur selon vos besoins */
+    max-width: 200px; /* Taille limite pour éviter de déborder */
+    height: auto; /* Préserve les proportions */
+}
     </style>
     
     
