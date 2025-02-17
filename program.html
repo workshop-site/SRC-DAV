@@ -12,7 +12,7 @@
 	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <title>Images c�te � c�te avec description</title> -->
+   <!-- <title>Images côte à côte avec description</title> -->
     <style>
         .container {
             display: flex;
@@ -33,10 +33,27 @@
             color: #333; /* Couleur du texte */
             margin-top: 8px;
         }
+	    #rightside img {
+    max-width: 100%; /* Empêche les images de dépasser la largeur de la colonne */
+    height: auto; /* Maintient les proportions */
+    display: block; /* Évite les espaces indésirables sous l’image */
+    margin: 10px auto; /* Centre l’image */
+}
+	    .image-container {
+    display: flex;
+    flex-direction: column; /* Affiche les images en colonne */
+    align-items: center; /* Centre les images horizontalement */
+    max-width: 100%; /* Empêche le débordement */
+}
+.image-container img {
+    width: 80%; /* Ajustez cette valeur selon vos besoins */
+    max-width: 200px; /* Taille limite pour éviter de déborder */
+    height: auto; /* Préserve les proportions */
+}
     </style>
     
    <!--  
-   <title>Images de tailles diff�rentes</title>
+   <title>Images de tailles différentes</title>
     <style>
         .container {
             display: flex;
@@ -47,11 +64,11 @@
             text-align: center;
         }
         .image1 {
-            width: 25px;  /* Taille sp�cifique pour la premi�re image */
+            width: 25px;  /* Taille spécifique pour la première image */
             height: auto;
         }
         .image2 {
-            width: 400px;  /* Taille sp�cifique pour la deuxi�me image */
+            width: 400px;  /* Taille spécifique pour la deuxième image */
             height: auto;
         }
     </style> 
@@ -92,32 +109,24 @@
 	</div>
 
 	<div id="rightside">
-		<h3><font size="2">Important Dates</font></h3>
-		<ul>
-			<li><font size="1">Submission Deadline</font></a></li>
-			<!-- <li><font color=#FF0000 size="1"><del><b>March 30, 2025</b></del> </font></a></li> -->
-			<li><font color="#995B00" size="1"><b>March 30, 2025</b></font></a></li>
-			<li><font size="1">Acceptance Notification</font></a></li>
-			<li><font color="#995B00" size="1"><b>April 30, 2025</b></font></a></li>
-			<li><font size="1">Camera-ready version</font></a></li>
-			<li><font color="#995B00" size="1"><b>May 10, 2025</b></font></a></li>
-		</ul><br><br>
-		
-		<ul>
-			<!-- <div class="container">
-        							<div class="image-box">
-           						 	<img src="img/ieee-france-section.jpg" alt="Image 1">
-           							 
-       			                                  </div>
-		
-		        </div> -->
-		        
-			<center>
-			<!-- <a href="https://ieeefrance.org/" target="_new"><img src="img/ieee-france-section.jpg" alt="IEEE-FS" border=0></a><br><img src="images/blank.gif" alt="" width="250" height="auto"><br><br> -->
-   			<!-- <a href="https://ieeefrance.org/" target="_new"><img src="img/small-SIGMOBILE.gif" alt="SIGMOBILE" border=0></a><br><img src="images/blank.gif" alt="" width=1 height=1> -->
-   			</center>
-		</ul>
-	</div>
+    <h3><font size="2">Important Dates</font></h3>
+    <ul>
+        <li><font size="1">Submission Deadline</font></li>
+        <li><font color="#995B00" size="1"><b>March 30, 2025</b></font></li>
+        <li><font size="1">Acceptance Notification</font></li>
+        <li><font color="#995B00" size="1"><b>April 30, 2025</b></font></li>
+        <li><font size="1">Camera-ready version</font></li>
+        <li><font color="#995B00" size="1"><b>May 10, 2025</b></font></li>
+    </ul>
+    
+    <div class="image-container">
+        <img src="img/ieee-logo.gif" alt="ieee-logo">
+	<img src="img/ieee-comsoc-logo.png" alt="ieee-comsoc-logo">
+	<img src="img/IEEE_france_section-1.jpg" alt="IEEE_france_section-1">
+        <img src="img/logoIFIP.png" alt="logoIFIP">
+    </div>
+</div>
+
 
 	<div id="content">
 	        &nbsp;&nbsp;&nbsp;&nbsp;
