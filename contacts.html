@@ -12,7 +12,7 @@
 	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <title>Images c�te � c�te avec description</title> -->
+   <!-- <title>Images côte à côte avec description</title> -->
     <style>
         .container {
             display: flex;
@@ -33,10 +33,27 @@
             color: #333; /* Couleur du texte */
             margin-top: 8px;
         }
+	    #rightside img {
+    max-width: 100%; /* Empêche les images de dépasser la largeur de la colonne */
+    height: auto; /* Maintient les proportions */
+    display: block; /* Évite les espaces indésirables sous l’image */
+    margin: 10px auto; /* Centre l’image */
+}
+	    .image-container {
+    display: flex;
+    flex-direction: column; /* Affiche les images en colonne */
+    align-items: center; /* Centre les images horizontalement */
+    max-width: 100%; /* Empêche le débordement */
+}
+.image-container img {
+    width: 80%; /* Ajustez cette valeur selon vos besoins */
+    max-width: 200px; /* Taille limite pour éviter de déborder */
+    height: auto; /* Préserve les proportions */
+}
     </style>
     
    <!--  
-   <title>Images de tailles diff�rentes</title>
+   <title>Images de tailles différentes</title>
     <style>
         .container {
             display: flex;
@@ -47,11 +64,11 @@
             text-align: center;
         }
         .image1 {
-            width: 25px;  /* Taille sp�cifique pour la premi�re image */
+            width: 25px;  /* Taille spécifique pour la première image */
             height: auto;
         }
         .image2 {
-            width: 400px;  /* Taille sp�cifique pour la deuxi�me image */
+            width: 400px;  /* Taille spécifique pour la deuxième image */
             height: auto;
         }
     </style> 
